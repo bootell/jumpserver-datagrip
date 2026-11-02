@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>dev.jumpserverbridge.auth</id>
+    <name>JumpServer Database Auth</name>
+    <vendor>JumpServer Bridge Contributors</vendor>
+    <description>Obtain fresh JumpServer credentials for MySQL connections using a personal API key.</description>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.database</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <database.connectionInterceptor implementation="dev.jumpserverbridge.datagrip.auth.JumpServerAuthProvider"
+                                        id="jumpserver-auth" order="first"/>
+        <applicationConfigurable parentId="tools" id="jumpserver.database.auth"
+                                 displayName="JumpServer"
+                                 instance="dev.jumpserverbridge.datagrip.settings.JumpServerConfigurable"/>
+        <notificationGroup id="JumpServer Database Auth" displayType="BALLOON" isLogByDefault="false"/>
+    </extensions>
+    <actions>
+        <action id="dev.jumpserverbridge.AddDataSource"
+                class="dev.jumpserverbridge.datagrip.catalog.AddJumpServerDataSourceAction"
+                text="从 JumpServer 添加连接…"
+                description="搜索有权限的 MySQL 资产和账号，创建自动认证的数据源">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

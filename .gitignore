@@ -1,0 +1,31 @@
+# Local environment and private validation records
+.local/
+.superpowers/
+.agents/
+.codex/
+.aws/
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.properties
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Operating-system metadata
+.DS_Store
+.gradle/
+.kotlin/
+.intellijPlatform/
+build/
+/public/
+.idea/
+*.iml
+*.log
+*.zip
+__pycache__/
+*.py[cod]

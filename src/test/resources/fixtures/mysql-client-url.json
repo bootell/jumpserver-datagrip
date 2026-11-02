@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "id": "00000000-0000-4000-8000-000000000002",
+  "value": "fixture-password",
+  "name": "fixture",
+  "protocol": "mysql",
+  "token": {"id": "00000000-0000-4000-8000-000000000002", "value": "fixture-password"},
+  "asset": {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "category": "database", "type": "mysql", "name": "fixture",
+    "address": "mysql.example.com", "info": {}
+  },
+  "endpoint": {"host": "mysql.example.com", "port": 33061},
+  "file": {}, "command": ""
+}
