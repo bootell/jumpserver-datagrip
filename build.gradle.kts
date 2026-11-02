@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "dev.jumpserverbridge.datagrip"
-version = "0.2.6"
+version = "0.0.1"
 
 repositories {
     mavenCentral()

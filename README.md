@@ -48,11 +48,11 @@ GitHub Actions 会在提交、PR、手动触发及每天定时执行测试和官
 
 每次推送代码和提交 PR 都会自动编译、测试并检查 IDE 兼容性，安装包可在 Actions 运行页面下载。只有推送版本标签才会自动创建正式 Release，并上传可直接安装的插件 ZIP；标签必须与 `build.gradle.kts` 中的版本一致。
 
-例如当前版本 `0.2.6`，先提交代码，再执行：
+例如当前版本 `0.0.1`，先提交代码，再执行：
 
 ```sh
-git tag v0.2.6
-git push origin v0.2.6
+git tag v0.0.1
+git push origin v0.0.1
 ```
 
 后续发布先修改项目版本号并提交，再推送对应的 `v版本号` 标签。发布过程使用 GitHub 自带令牌，无需配置个人 Token。
